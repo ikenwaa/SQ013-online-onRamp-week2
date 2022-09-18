@@ -1,19 +1,14 @@
 function sumOfMultiples(arr) {
-   let total;
+    let sum = 0;
+    let newArr = [];
 
-   for (let i = 0; i < arr.length; i++){
-    if (i % 3 === 0 && i % 5 === 0) {
-        total += arr[i];
+    for (let i = 0; i < arr.length; i++) {
+        newArr.push(arr[i]);
+        if (newArr[i] % 3 === 0 || newArr[i] % 5 === 0){
+            sum += newArr[i];
+        }   
     }
-   }
-   console.log(total);
+    return sum;
 }
-module.exports = sumOfMultiples
 
-sumOfMultiples([6, 3, 0, 30, 7]);
-
-// Initialize empty array
-// Check if arr[i] is divisible by 3 and 5
-// Push into newArr[i]
-// Loop through newArr[i] 
-// Sum newArr[i]
+module.exports = sumOfMultiples;
