@@ -16,5 +16,4 @@ function accum(str) {
     return result.join("-");
 }
 
-console.log(accum("RqaEzty"));
 module.exports =accum
