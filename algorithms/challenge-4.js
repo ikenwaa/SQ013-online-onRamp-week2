@@ -1,4 +1,10 @@
 function squareDigit(str) {
- 
- }
-  module.exports =squareDigit
+    let strToInt = [];
+
+    for (let i = 0; i < str.length; i++){
+        Number(strToInt.push(str[i] ** 2));
+    }
+    return strToInt.join("");
+}
+
+module.exports =squareDigit
